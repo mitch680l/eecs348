@@ -1,0 +1,14 @@
+I am using a fresh install of windows/C++ and couldn't test how it works in a real compiler by the deadline
+
+However, it works on repl.it
+https://replit.com/@m395l680/lab6
+
+join link if that dosn't work
+https://replit.com/join/assneizycu-m395l680
+
+commands:
+make
+make run
+make clean
+
+Everything should work though

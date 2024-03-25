@@ -18,6 +18,10 @@ void Matrix::print() {
   std::cout << '\n';
 }
 
+
+//Instead of actual [][] matrix I just use a array 
+//because its easier for me personally to visualize the pointers
+//The basic formula for the conversion is (Row size * row) + col
 int Matrix::get_item(int row, int col) { return matrix[(size * row) + col]; }
 
 void Matrix::set_item(int row, int col, int item) {
@@ -26,6 +30,10 @@ void Matrix::set_item(int row, int col, int item) {
 
 int Matrix::get_size() { return size; }
 
+
+//The main reason I wanted to use OOP here is because
+//I thought it would be fun to use the overload operator feature
+//This allows operators like *, +, -, etc to be used on this Matrix class and not just numbers
 Matrix Matrix::operator+(Matrix other) {
   int newSize = other.get_size();
   int* newArr = new int[newSize * newSize];
@@ -72,9 +80,13 @@ Matrix Matrix::operator*(int num) {
 }
 
 Matrix Matrix::operator-(Matrix other) {
-  return *this + (other * -1);
+  return *this + (other * -1); //A - B = A + -(B) essentially
   
 }
+
+//When a matrix does multiplication
+//Whats happening is a bunch of dot products which is a sum of products (a1 * a2) + (b1 * b2) + ...
+//This makes the operator* method for loop looka lot better than a triple for loop
 int Matrix::dot_product(Matrix other, int row, int col) {
   int sum = 0;
   for (int i = 0; i < other.get_size(); i++) {
@@ -83,6 +95,7 @@ int Matrix::dot_product(Matrix other, int row, int col) {
   return sum;
 }
 
+//I don't think I used this one, but If I built a more elaborate test case, this would be useful
 bool Matrix::operator==(Matrix other) {
   if (get_size() != other.get_size()) {
     return false;
