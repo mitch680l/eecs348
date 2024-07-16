@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\ExpressionParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\BooleanLogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\ExpressionEvaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\CLIInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\Operator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\yolob\OneDrive\Desktop\348_final\Truthy\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9F4F5170-154C-3BB9-962E-3DE4DF28E115}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
